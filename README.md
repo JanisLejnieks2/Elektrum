@@ -11,7 +11,7 @@
 #### Ievadot summu tālāk tiek caur swedbank veikts maksājums. Nav pievienotas citas maksājumu metodes, jo mans uzdevums bija veikt rēķina apmaksu pēc iespējas ātrāk, apstrādājot kļūdas, ja informācija tiek ievadīta nepareizi.
 
 ## Izmantotās bibliotēkas un klases:
-#### Selenium
+#### Selenium:
 Tā ir galvenā programmatūras bibliotēka, kas ir pamats strādājot ar interneta pārlūkiem, lai manā gadijumā automatizētu procesus. No Selenium bibliotēkas tālāk tiek importētas daudzas citas noderīgas klases.
 Lai programmatūra atvērtu chrome, izmantoju webdriver klasi no Selenium, manā gadījumā webdriver.Chrome() un tālāk ar driver.get(elektrum.lv) varu nokļūt uz nepieciešamo mājaslapu.
 #### webdriver.ChromeOptions: (Selenium)
@@ -25,9 +25,9 @@ varētu darboties ar mājaslapu, lai atrastu pogas kuras jānospiež, kļūdu lo
 #### WebDriverWait: (Selenium)
 WebDriverWait klasi izmanto, lai sagaidītu, kad pārlūkā ir atrasts nepieciešamais, šo klasi izmantoju bieži, lai sagaidītu logus, kas parādas pēc lapas pārlādes
 vai tikai pēc kļūdainas informācijas ievadīšanas. 
-#### Expected conditions as EC (Selenium)
+#### Expected conditions as EC: (Selenium)
 Šo klasi izmanto kopā ar WebDriverWait klasi, lai sagaidītu lauku un tad palaistu tālāk programmu, ko izmantoju meklējot kļūdu laukus mājaslapā, ja tie tur parādās.
-#### time
+#### time:
 Šo bibliotēku izmantoju savā programmatūrā, lai aizkavētu procesus lapas ielādes laikā,tādēļ brīžiem izmantoju time.sleep().
 
 ## Izmantošanas metodes:
