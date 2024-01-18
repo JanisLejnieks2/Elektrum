@@ -93,7 +93,6 @@ while True:
                 pievienoties_button2 = EC.element_to_be_clickable((By.CLASS_NAME, 'button.-positive'))
                 pievienoties_button2 = WebDriverWait(driver, 5).until(pievienoties_button2)
                 pievienoties_button2.click()
-                #time.sleep(1)
                 #error apstrāde - tālāka apmaksa
                 error =  EC.visibility_of_element_located((By.XPATH, '//ui-message[@type="error"]//div[@class="ui-message__content"]'))  
                 try:
@@ -111,7 +110,6 @@ while True:
                     payment_thank_you_class = "payment-thank-you"
                     payment_thank_you_element = WebDriverWait(driver, 20).until(
                     EC.presence_of_element_located((By.CLASS_NAME, payment_thank_you_class)))
-                    #prints the message
                     message_element = payment_thank_you_element.find_element(By.XPATH, './/div[@class="text"]/p[2]')
                     print(message_element.text)
                 except:
